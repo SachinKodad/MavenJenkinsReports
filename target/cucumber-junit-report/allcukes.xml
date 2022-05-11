@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.662">
+    <testcase classname="Sbi Login" name="Verify Login functionality of Sbi" time="10.199">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given :User is on sbi login.................................................passed
+When :user click on proceed to login........................................passed
+Then :All controls on login page should be visible..........................passed
+Then :User enters username and password.....................................passed
+And : User clicks on login button...........................................passed
+Then :Validate user is logged in............................................undefined
+]]>
+        </failure>
+    </testcase>
+</testsuite>
