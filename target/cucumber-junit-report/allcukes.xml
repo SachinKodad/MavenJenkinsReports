@@ -1,13 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.662">
-    <testcase classname="Sbi Login" name="Verify Login functionality of Sbi" time="10.199">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given :User is on sbi login.................................................passed
-When :user click on proceed to login........................................passed
-Then :All controls on login page should be visible..........................passed
-Then :User enters username and password.....................................passed
-And : User clicks on login button...........................................passed
-Then :Validate user is logged in............................................undefined
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.147">
+    <testcase classname="Sbi Login" name="Verify Login functionality of Sbi" time="2.637">
+        <failure message="session not created: This version of ChromeDriver only supports Chrome version 101&#10;Current browser version is 103.0.5060.53 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-8D071I2', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x005CB8F3+2406643]&#10;&#9;Ordinal0 [0x0055AF31+1945393]&#10;&#9;Ordinal0 [0x0044C748+837448]&#10;&#9;Ordinal0 [0x0046C8B3+968883]&#10;&#9;Ordinal0 [0x004684BA+951482]&#10;&#9;Ordinal0 [0x00465D71+941425]&#10;&#9;Ordinal0 [0x00498EE0+1150688]&#10;&#9;Ordinal0 [0x00498B3A+1149754]&#10;&#9;Ordinal0 [0x00494096+1130646]&#10;&#9;Ordinal0 [0x0046E636+976438]&#10;&#9;Ordinal0 [0x0046F546+980294]&#10;&#9;GetHandleVerifier [0x00839612+2498066]&#10;&#9;GetHandleVerifier [0x0082C920+2445600]&#10;&#9;GetHandleVerifier [0x00664F2A+579370]&#10;&#9;GetHandleVerifier [0x00663D36+574774]&#10;&#9;Ordinal0 [0x00561C0B+1973259]&#10;&#9;Ordinal0 [0x00566688+1992328]&#10;&#9;Ordinal0 [0x00566775+1992565]&#10;&#9;Ordinal0 [0x0056F8D1+2029777]&#10;&#9;BaseThreadInitThunk [0x759BFA29+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77347A9E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77347A6E+238]&#10;" type="org.openqa.selenium.SessionNotCreatedException">
+            <![CDATA[Given :User is on sbi login.................................................failed
+When :user click on proceed to login........................................skipped
+Then :All controls on login page should be visible..........................skipped
+Then :User enters username and password.....................................skipped
+And : User clicks on login button...........................................skipped
+Then :Validate user is logged in............................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 103.0.5060.53 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8D071I2', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x005CB8F3+2406643]
+	Ordinal0 [0x0055AF31+1945393]
+	Ordinal0 [0x0044C748+837448]
+	Ordinal0 [0x0046C8B3+968883]
+	Ordinal0 [0x004684BA+951482]
+	Ordinal0 [0x00465D71+941425]
+	Ordinal0 [0x00498EE0+1150688]
+	Ordinal0 [0x00498B3A+1149754]
+	Ordinal0 [0x00494096+1130646]
+	Ordinal0 [0x0046E636+976438]
+	Ordinal0 [0x0046F546+980294]
+	GetHandleVerifier [0x00839612+2498066]
+	GetHandleVerifier [0x0082C920+2445600]
+	GetHandleVerifier [0x00664F2A+579370]
+	GetHandleVerifier [0x00663D36+574774]
+	Ordinal0 [0x00561C0B+1973259]
+	Ordinal0 [0x00566688+1992328]
+	Ordinal0 [0x00566775+1992565]
+	Ordinal0 [0x0056F8D1+2029777]
+	BaseThreadInitThunk [0x759BFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77347A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77347A6E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at stepdefinitions.SBILOGINtest.user_is_on_sbi_login(SBILOGINtest.java:22)
+	at ✽.:User is on sbi login(file:///C:/Users/New/git/MavenJenkinsReports/Features/SBILOGIN.feature:5)
 ]]>
         </failure>
     </testcase>
